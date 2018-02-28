@@ -1,0 +1,5 @@
+FizzBuzz[n_Integer] /; n > 0 := 
+ If[Mod[#, 3] == Mod[#, 5] == 0, "fizzbuzz", 
+    If[Mod[#, 3] == 0, "fizz", If[Mod[#, 5] == 0, "buzz", #]]] & /@ 
+  Range[n]
+FizzBuzz[20]
